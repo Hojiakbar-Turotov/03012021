@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Css course -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!--  -->
+        <header id="header">
+            <h3>
+                Invoices
+                <div></div>
+            </h3>
+            <form action="">
+                <div class="form-head">
+                    <h4>
+                        Actions
+                    </h4>
+                    <div class="btn-blue" onclick="addInvoices(true)">
+                        Add new
+                    </div>
+                </div>
+                <div class="form-body">
+                    <h4>
+                        Invoices
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    Create
+                                </td>
+                                <td>
+                                    No
+                                </td>
+                                <td>
+                                    Supply
+                                </td>
+                                <td>
+                                    Comment
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody id="invoicesInfo">
+
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </header>
+        <!--  -->
+        <!--  -->
+        <section id="addInvoices" class="d-none">
+            <h3>
+                <span>Create Invoice</span>
+                <div></div>
+            </h3>
+            <form action="">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="invoicesDate">
+                            <h4>
+                                Number:
+                            </h4>
+                        </label>
+                        <div class="input-group">
+                            <input type="text" id="invoicesDate">
+                            <span class="input-icon">
+                                X
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="invoicesId">
+                            <h4>
+                                Invoice Date:
+                            </h4></label>
+                            <input type="date" id="invoicesId" placeholder="Select date">
+                    </div>
+                    <div class="col-6">
+                        <label for="invoicesSupple">
+                            <h4>
+                                Supply Date:
+                            </h4>
+                        </label>
+                        <input type="date" id="invoicesSupple">
+                    </div>
+                    <div class="col-12">
+                        <label for="invoicesCommit">
+                            <h4>
+                                Comment:
+                            </h4>
+                        </label>
+                        <textarea name="" id="invoicesCommit"></textarea>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="btn-blue" onclick="saveInvoices()">
+                        Save
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!--  -->
+        <!-- Js course -->
+        <script src="./app/app.js"></script>
+    </body>
+</html>

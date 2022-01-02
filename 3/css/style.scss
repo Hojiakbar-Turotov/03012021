@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.d-none {
+    display: none;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: #fff;
+    font-size: small;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    &:hover {
+        cursor: pointer;
+    }
+}
+header {
+    background-color: #eee;
+    padding: 20px 0 20px 20px;
+    height: 100vh;
+    h3 {
+        width: calc(100% - 40px);
+        border-left: 3px solid #ddd;
+        padding: 5px 0 5px 15px;
+        color: #666;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        div {
+            height: 2px;
+            width: 100%;
+            margin-left: 10px;
+            background-color: #ddd;
+        }
+    }
+    form {
+        width: calc(100% - 40px);
+        overflow-x: hidden;
+        .form-head {
+            background-color: #fff;
+            padding: 15px 0 15px 15px;
+            margin: 25px auto;
+            h4 {
+                font-size: smaller;
+            }
+            .btn-blue {
+                margin-top: 10px;
+            }
+        }
+        .form-body {
+            background-color: #fff;
+            padding: 15px 0 15px 15px;
+            margin: 25px auto;
+            h4 {
+                font-size: smaller;
+            }
+            table {
+                border-spacing: 0;
+                width: calc(100% - 20px);
+                margin-top: 10px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                overflow: hidden;
+                thead {
+                    tr {
+                        td {
+                            padding: 15px 10px;
+                            width: calc(100% / 4);
+                            background-color: #eee;
+                            font-weight: bold;
+                            color: #666;
+                        }
+                    }
+                }
+                #invoicesInfo {
+                    tr {
+                        td {
+                            padding: 15px 10px;
+                            width: calc(100% / 4);
+                            color: #666;
+                            border-bottom: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#addInvoices {
+    background-color: #eee;
+    padding: 20px 0 20px 20px;
+    height: 100vh;
+    h3 {
+        width: calc(100% - 40px);
+        border-left: 3px solid #ddd;
+        padding: 5px 0 5px 15px;
+        color: #666;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        span {
+            display: inline-block;
+            width: 150px;
+        }
+        div {
+            height: 2px;
+            width: 100%;
+            margin-left: 10px;
+            background-color: #ddd;
+        }
+    }
+    form {
+        margin-top: 25px;
+        background-color: #fff;
+        padding: 15px;
+        margin-right: 30px;
+        .row {
+            padding: 20px 15px;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            .col-6 {
+                width: calc(50%);
+                label {
+                    h4 {
+                        font-size: smaller;
+                        margin-bottom: 10px;
+                    }
+                }
+                input {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    width: calc(100% - 20px);
+                    &:hover, &:active {
+                        outline: none;
+                    }
+                }
+                .input-group {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 0 0 10px;
+                    margin-right: 20px;
+                    width: calc(100% - 20px);
+                    input {
+                        border: none;
+                        outline: none;
+                        width: calc(100% - 35px);
+                        color: #000;
+                        font-weight: bold;
+                        &:hover, &:active {
+                            outline: none;
+                        }
+                    }
+                    span {
+                        padding: 5px 10px;
+                        font-size: small;
+                        background-color: #eee;
+                        border-left: 1px solid #ddd;
+                    }
+                }
+                margin-bottom: 20px;
+            }
+            .col-12 {
+                width: 100%;
+                label {
+                    h4 {
+                        font-size: smaller;
+                        margin-bottom: 10px;
+                    }
+                }
+                textarea {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    width: calc(100% - 20px);
+                    &:hover, &:active {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .right{
+            margin: 30px 0 0 auto;
+            width: 70px;
+        }
+    }
+}
